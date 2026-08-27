@@ -3,70 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Convite para Festa</title>
-     <center
 </head>
 <body>
-    <h1>Convite para minha festa!!!!</h1>
-    
-    <form id="form-contato" action="/enviar" method="post">
-   
-        <h3>Você aceita ir à minha festa????</h3>
+    <center>
+        <h1>Convite para minha festa!!!!</h1>
         
-        <!-- Termos de aceite -->
-        <div>
-            <input type="checkbox" id="aceite_sim" name="aceite" value="sim">
-            <label for="aceite_sim">Aceito ir à festa</label>
-        </div>
-        
-        <div>
-            <input type="checkbox" id="aceite_nao" name="aceite" value="nao">
-            <label for="aceite_nao">Não posso ir à sua festa infelizmente</label>
-        </div>
-
-        <br>
-
-        <!-- Motivo da falta -->
-        <div>
-            <h3><label>Motivo da falta:</label></h3>
-            <input type="radio" id="viajar" name="motivo" value="viajar">
-            <label for="viajar">Vou viajar</label><br>
+        <form id="form-contato" action="/enviar" method="post">
+            <h3>Você aceita ir à minha festa????</h3>
             
-            <input type="radio" id="outro" name="motivo" value="outros">
-            <label for="outro">Outro motivo</label>
-        </div>
+            <!-- Termos de aceite -->
+            <div>
+                <input type="checkbox" id="aceite_sim" name="aceite" value="sim">
+                <label for="aceite_sim">Aceito ir à festa</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="aceite_nao" name="aceite" value="nao">
+                <label for="aceite_nao">Não posso ir à sua festa infelizmente</label>
+            </div>
 
-        <br>
+            <br>
 
-        <!-- Certeza da presença -->
-        <div>
-            <h3><label for="certeza">Certeza da sua presença??</label></h3>
-            <select name="certeza" id="certeza">
-                <option value="irei">Irei à festa siimm!!</option>
-                <option value="nao_poderei">Infelizmente não poderei comparecer</option>
-            </select>
-        </div>
+            <!-- Motivo da falta -->
+            <div>
+                <h3>Motivo da falta:</h3>
+                <input type="radio" id="viajar" name="motivo" value="viajar">
+                <label for="viajar">Vou viajar</label><br>
+                
+                <input type="radio" id="outro" name="motivo" value="outros">
+                <label for="outro">Outro motivo</label>
+            </div>
 
-        <br>
+            <br>
 
-        <h3>A festa será na minha casa!!</h3>
-        <h3>Preencha o formulário até o dia 07/09!!!</h3>
+            <!-- Certeza da presença -->
+            <div>
+                <h3><label for="certeza">Certeza da sua presença??</label></h3>
+                <select name="certeza" id="certeza">
+                    <option value="irei">Irei à festa siimm!!</option>
+                    <option value="nao_poderei">Infelizmente não poderei comparecer</option>
+                </select>
+            </div>
 
-        <br>
+            <br>
 
-        <!-- Botão de Envio -->
-        <div>
-            <button type="submit">Enviar</button>
-        </div>
-        </center>
-    </form>
+            <h3>A festa será na minha casa!!</h3>
+            <h3>Preencha o formulário até o dia 07/09!!!</h3>
+
+            <!-- Contato -->
+            <div>
+                <p>Entre em contato: <strong>75992920826</strong></p>
+            </div>
+
+            <br>
+
+            <!-- Botão de Envio -->
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </center>
+
     <script>
-        const formulario=document.querySelector("#form-contato")
-        formulario.addEventListener("submit",function (event) { 
+        const formulario = document.querySelector("#form-contato");
+        formulario.addEventListener("submit", function (event) { 
             event.preventDefault();
-            alert("espero vc");
+            alert("Espero você!");
         });
-        
-            
-        </script>
+    </script>
 </body>
 </html>
